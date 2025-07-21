@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .container{
+      display: grid;
+      grid-template-columns: 320px 351px 59px;
+      grid-template-rows: 414px 296px 20px;
+      gap: 9px;
+      background-color: black;
+      width: 748px;
+      height: 748px;
+    }
+
+    .span{
+      grid-column: span 2;
+    }
+
+    .red{
+      background-color: #E72F24;
+    }
+
+    .grey{
+      background-color: #F0F1EC;
+    }
+
+    .blue{
+      background-color: #004592;
+      height: 130px;
+      border-bottom: 20px solid black;
+    }
+
+    .black{
+      background-color: #232629;
+      width: 153px;
+      justify-content: flex-end;
+    }
+
+    .yellow{
+      background-color: #F9D01E;
+      width: 198px;
+    }
+
+    .second-container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .f-item+.grey{
+      height: 155px;
+    }
+    
+    .third-container{
+      display: flex;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+
+  <div class="container">
+    <div class="item red"></div>
+    <div class="item grey span"></div>
+    <div class="item grey"></div>
+    <div class="item grey"></div>
+    <div class="item grey second-container">
+      <div class="f-item blue"></div>
+      <div class="f-item grey"></div>
+    </div>
+    <div class="item grey"></div>
+    <div class="item third-container">
+      <div class="f-item yellow"></div>
+      <div class="f-item black"></div>
+    </div>
+    <div class="item grey invisible"></div>
+  </div>
+</body>
+
+</html>
