@@ -18,3 +18,8 @@ function fizzBuzz(){
   i++;
   console.log(output);
 }
+
+var i=1
+while(i<=100){
+    fizzBuzz();
+}
