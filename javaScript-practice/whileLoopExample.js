@@ -1,3 +1,5 @@
+// This script prints the "99 Bottles of Beer" song lyrics using a while loop in JavaScript.
+
 var i=99;
 while (i>1){
     console.log(i+" bottles of beer on the wall, "+i+" bottles of beer.Take one down and pass it around, "+--i+" bottles of beer on the wall.");
